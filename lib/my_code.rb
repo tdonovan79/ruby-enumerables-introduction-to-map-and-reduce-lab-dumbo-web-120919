@@ -54,6 +54,7 @@ def reduce_to_all_true(array)
     if !array[index]
       truth_flag = 0
     end
+    index += 1
   end
   return truth_flag
 end
@@ -66,6 +67,7 @@ def reduce_to_any_true(array)
     if array[index]
       truth_flag = 1
     end
+    index += 1
   end
   return truth_flag
 end
