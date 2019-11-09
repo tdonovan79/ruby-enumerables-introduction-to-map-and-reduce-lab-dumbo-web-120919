@@ -49,10 +49,10 @@ end
 #if all values are true, return true
 def reduce_to_all_true(array)
   index = 0
-  truth_flag = 1
+  truth_flag = true
   while index < array.length do
     if !array[index]
-      truth_flag = 0
+      truth_flag = false
     end
     index += 1
   end
@@ -62,10 +62,10 @@ end
 #if any values are true, return true
 def reduce_to_any_true(array)
   index = 0
-  truth_flag = 0
+  truth_flag = false
   while index < array.length do
     if array[index]
-      truth_flag = 1
+      truth_flag = true
     end
     index += 1
   end
